@@ -3,7 +3,12 @@ from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-engine = create_async_engine('postgresql+asyncpg://postgres:r3l0ATprogef3w_+@127.0.0.1:5432/aiohttp_netology')
+DB_USER = ''
+DB_PASSWORD = ''
+DB_NAME = ''
+DB_PORT = ''
+
+engine = create_async_engine('postgresql+asyncpg://DB_USER:DB_PASSWORD@127.0.0.1:DB_PORT/DB_NAME)
 Base = declarative_base()
 Session = sessionmaker(bind=engine, class_=AsyncSession, expire_on_commit=False)
 
