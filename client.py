@@ -36,7 +36,7 @@ async def delete_advert(advert_id: str):
 # run(get_advert(advert_id='2'))
 # run(get_advert(advert_id='3'))
 #
-# run(delete_advert(advert_id='2'))
+# run(delete_advert(advert_id='1'))
 # run(get_advert(advert_id='1'))
 #
 # run(patch_advert(advert_id='3', json={'name': 'new_name'}))
